@@ -34,7 +34,7 @@ Website có thể chạy trực tiếp từ `index.html`. Một số font chữ 
 │   ├── project_banner.svg
 │   ├── conflict_resolution_steps.svg
 │   └── listening_workshop_poster.svg
-└── Huong_dan_file_va_phan_cong.pdf
+└── file_guide_and_member_assignments.pdf
 ```
 
 ## Các trang nội dung
@@ -84,4 +84,3 @@ Tên file dùng chữ thường, tiếng Anh, không dấu, không khoảng tr�
 5. Kiểm tra hiển thị ở chiều rộng 1366 px và 390 px; bảo đảm không tràn ngang.
 6. Copy/giải nén toàn bộ thư mục sang vị trí khác rồi mở lại `index.html` để kiểm tra đường dẫn tương đối.
 7. Cập nhật tên thành viên, nguồn tư liệu và minh chứng công việc thực tế trước khi nộp.
-
