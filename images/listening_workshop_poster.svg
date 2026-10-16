@@ -1,0 +1,25 @@
+<!-- Poster hoạt động trải nghiệm giả định; tên file SVG theo snake_case. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="760" viewBox="0 0 600 760" role="img" aria-labelledby="title desc">
+  <title id="title">Góc thực hành lắng nghe</title>
+  <desc id="desc">Poster hoạt động trải nghiệm giả định về nhận diện cảm xúc và trao đổi khi bất đồng.</desc>
+  <rect width="600" height="760" fill="#e8eee5"/>
+  <rect x="34" y="34" width="532" height="692" fill="#fffefa"/>
+  <rect x="34" y="34" width="532" height="250" fill="#173f3a"/>
+  <circle cx="473" cy="145" r="65" fill="none" stroke="#9fc4ae" stroke-width="2"/>
+  <circle cx="473" cy="145" r="42" fill="#d48b6c"/>
+  <text x="70" y="85" fill="#b9d9c9" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">HOẠT ĐỘNG TRẢI NGHIỆM · MINH HỌA</text>
+  <text x="70" y="151" fill="#fffefa" font-family="Arial,sans-serif" font-size="42" font-weight="700">Góc thực hành</text>
+  <text x="70" y="201" fill="#a9d6bd" font-family="Arial,sans-serif" font-size="42" font-weight="700">lắng nghe</text>
+  <text x="70" y="247" fill="#d3e2d9" font-family="Arial,sans-serif" font-size="15">Dừng lại · Chia sẻ · Cùng tìm cách</text>
+  <text x="76" y="345" fill="#176b61" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2">CÙNG THỰC HÀNH</text>
+  <text x="76" y="389" fill="#172a2a" font-family="Arial,sans-serif" font-size="21" font-weight="700">Nhận diện cảm xúc trong bất đồng</text>
+  <text x="76" y="424" fill="#596962" font-family="Arial,sans-serif" font-size="16">Thử nói điều mình cần và lắng nghe góc nhìn khác.</text>
+  <path d="M76 467H524" stroke="#dfe6dc" stroke-width="2"/>
+  <circle cx="95" cy="520" r="16" fill="#176b61"/><text x="95" y="525" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="12" font-weight="700">1</text>
+  <text x="126" y="526" fill="#172a2a" font-family="Arial,sans-serif" font-size="16">Hoạt động nhóm ngắn, có hướng dẫn</text>
+  <circle cx="95" cy="570" r="16" fill="#d48b6c"/><text x="95" y="575" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="12" font-weight="700">2</text>
+  <text x="126" y="576" fill="#172a2a" font-family="Arial,sans-serif" font-size="16">Thực hành tình huống giao tiếp</text>
+  <circle cx="95" cy="620" r="16" fill="#176b61"/><text x="95" y="625" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="12" font-weight="700">3</text>
+  <text x="126" y="626" fill="#172a2a" font-family="Arial,sans-serif" font-size="16">Cùng rút ra một bước có thể áp dụng</text>
+  <text x="76" y="687" fill="#78827d" font-family="Arial,sans-serif" font-size="11">Poster mô phỏng cho bài tập · Không phải sự kiện đã xác nhận</text>
+</svg>
