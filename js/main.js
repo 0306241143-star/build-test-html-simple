@@ -1,4 +1,4 @@
-// Chức năng dùng chung cho dashboard và chín trang nội dung của ba thành viên.
+// Chức năng dùng chung cho các trang hiện có của website.
 // Dữ liệu phản hồi cho các value trong danh sách chọn ở communication_scenarios.html.
 const situations = {
   "group-work": {
@@ -48,6 +48,19 @@ function renderSituationResponse() {
 // Chỉ gắn sự kiện khi trang hiện tại có đủ hai phần tử của chức năng.
 if (situationSelect && responseResult) {
   situationSelect.addEventListener("change", renderSituationResponse);
+}
+
+// Hiển thị câu trả lời thực hành ngay trên trang; không gửi hoặc lưu dữ liệu.
+const practiceForm = document.querySelector("#practice-form");
+const practiceResponse = document.querySelector("#practice-response");
+const practiceResult = document.querySelector("#practice-result");
+
+if (practiceForm && practiceResponse && practiceResult) {
+  practiceForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    practiceResult.textContent = `Bạn sẽ thử nói: “${practiceResponse.value.trim()}” Nội dung này chỉ được xử lý trong trình duyệt, không được gửi đi hoặc lưu lại.`;
+    practiceResult.hidden = false;
+  });
 }
 
 // Mở/đóng điều hướng trên màn hình nhỏ và đồng bộ trạng thái trợ năng aria-expanded.

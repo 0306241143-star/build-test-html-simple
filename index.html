@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <!-- Dashboard trung tâm: điều hướng đến đủ chín trang nội dung của ba thành viên. -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Khám phá website học tập về nhận diện cảm xúc, tạm dừng và xử lý xung đột.">
+  <meta name="description" content="Thực hành tạm dừng, lựa chọn lời phản hồi và lắng nghe trong các tình huống giao tiếp thường gặp.">
   <title>Tổng quan | Lắng nghe để hiểu</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
@@ -19,14 +18,14 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav class="site-nav" id="site-nav" aria-label="Điều hướng chính">
         <a class="active" href="index.html" aria-current="page">Tổng quan</a>
-        <a href="emotion_awareness.html">Cảm xúc</a>
-        <a href="project_introduction.html">Giới thiệu</a>
-        <a href="experience_registration.html">Đăng ký</a>
+        <a href="topic_pause_response.html">Tạm dừng</a>
+        <a href="index.html#overview-heading">Về website</a>
+        <a href="communication_scenarios.html#thuc-hanh">Thực hành</a>
         <a href="topic_pause_response.html">Tạm dừng</a>
         <a href="communication_scenarios.html">Tình huống</a>
-        <a href="needs_and_solutions.html">Giải pháp</a>
-        <a href="frequently_asked_questions.html">FAQ</a>
-        <a href="visual_library.html">Thư viện</a>
+        <a href="communication_scenarios.html">Tình huống</a>
+        <a href="user_guide.html">Hướng dẫn</a>
+        <a href="topic_pause_response.html">Infographic</a>
         <a href="user_guide.html">Hướng dẫn</a>
       </nav>
     </div>
@@ -35,53 +34,111 @@
   <main id="main">
     <section class="dashboard-hero">
       <div class="section">
-        <p class="eyebrow"><span class="eyebrow-line"></span> WEBSITE HỌC TẬP · QUẢN LÝ CẢM XÚC</p>
+        <p class="eyebrow"><span class="eyebrow-line"></span> WEBSITE HỌC TẬP · GIAO TIẾP TÍCH CỰC</p>
         <h1>Lắng nghe để hiểu.<br><span>Phản hồi để kết nối.</span></h1>
-        <p class="dashboard-lead">Một hành trình thực hành kỹ năng giao tiếp: nhận diện cảm xúc, tạm dừng trước khi phản hồi, rồi cùng trao đổi nhu cầu và tìm giải pháp.</p>
-        <div class="dashboard-meta"><span class="meta-pill">03 thành viên</span><span class="meta-pill">09 trang nội dung</span><span class="meta-pill">03 chuyên đề</span></div>
+        <p class="dashboard-lead">Tìm hiểu cách tạm dừng trước khi trả lời, rồi thực hành lời phản hồi bình tĩnh hơn qua những tình huống quen thuộc.</p>
+        <div class="dashboard-actions">
+          <a class="button button-light" href="#hanh-trinh">Khám phá nội dung <span aria-hidden="true">↓</span></a>
+          <a class="dashboard-text-link" href="user_guide.html">Cách sử dụng website <span aria-hidden="true">→</span></a>
+        </div>
       </div>
     </section>
 
-    <section class="section dashboard-section">
-      <div class="dashboard-section-heading">
-        <div><p class="eyebrow eyebrow-dark">BẢN ĐỒ WEBSITE</p><h2>Chọn một hành trình để bắt đầu.</h2></div>
-        <p>Mỗi thành viên phụ trách ba trang nội dung. Chọn thẻ để mở trang; các chức năng và sản phẩm truyền thông được đặt trong những trang liên quan.</p>
+    <section class="section home-overview" aria-labelledby="overview-heading">
+      <div class="home-overview-copy">
+        <p class="eyebrow eyebrow-dark">VỀ WEBSITE</p>
+        <h2 id="overview-heading">Giao tiếp tốt hơn bắt đầu từ việc hiểu nhau.</h2>
+        <p>Trong học tập và cuộc sống, khác biệt về kỳ vọng hay cách diễn đạt đôi khi dẫn đến hiểu lầm. Các trang còn lại tập trung vào kỹ năng tạm dừng, lựa chọn cách phản hồi và thực hành qua tình huống cụ thể.</p>
       </div>
+      <div class="home-overview-facts">
+        <article class="home-fact">
+          <span class="home-fact-number">01</span>
+          <div><h3>Dành cho người trẻ</h3><p>Tham khảo các kỹ năng có thể áp dụng trong học tập, tình bạn và sinh hoạt chung.</p></div>
+        </article>
+        <article class="home-fact">
+          <span class="home-fact-number">02</span>
+          <div><h3>Học qua thực hành</h3><p>Khám phá tình huống, câu hỏi gợi mở và các tư liệu trực quan đi kèm.</p></div>
+        </article>
+        <article class="home-fact">
+          <span class="home-fact-number">03</span>
+          <div><h3>Thực hành từ từ</h3><p>Bắt đầu bằng một khoảng dừng ngắn, sau đó thử nói điều mình cần.</p></div>
+        </article>
+      </div>
+    </section>
 
-      <section class="member-block" aria-labelledby="member-one-pages">
-        <div class="member-heading"><span class="member-number">01</span><h3 id="member-one-pages">Thành viên 1 · Nhận diện cảm xúc</h3><p>3 trang · Banner · Kiểm tra biểu mẫu</p></div>
-        <div class="page-card-grid">
-          <a class="page-card" href="emotion_awareness.html"><span class="page-card-type">CHUYÊN ĐỀ 01</span><h4>Nhận diện cảm xúc</h4><p>Quan sát cảm xúc và tín hiệu cơ thể trong giao tiếp.</p><span class="page-card-arrow">Mở trang →</span></a>
-          <a class="page-card" href="project_introduction.html"><span class="page-card-type">GIỚI THIỆU</span><h4>Vì sao có website này?</h4><p>Đối tượng, mục tiêu, thông điệp và cách bắt đầu.</p><span class="page-card-arrow">Mở trang →</span></a>
-          <a class="page-card" href="experience_registration.html"><span class="page-card-type">BIỂU MẪU</span><h4>Đăng ký hoạt động trải nghiệm</h4><p>Biểu mẫu mô phỏng có kiểm tra dữ liệu bằng JavaScript.</p><span class="page-card-arrow">Mở trang →</span></a>
+    <section class="dashboard-section home-roadmap" id="hanh-trinh" aria-labelledby="roadmap-heading">
+      <div class="section">
+        <div class="dashboard-section-heading">
+          <div><p class="eyebrow eyebrow-dark">NỘI DUNG CHÍNH</p><h2 id="roadmap-heading">Học cách phản hồi bình tĩnh hơn.</h2></div>
+          <p>Chọn một nội dung để tìm hiểu hoặc thực hành giao tiếp.</p>
         </div>
-      </section>
 
-      <section class="member-block" aria-labelledby="member-two-pages">
-        <div class="member-heading"><span class="member-number">02</span><h3 id="member-two-pages">Thành viên 2 · Tạm dừng và lựa chọn phản hồi</h3><p>3 trang · Tương tác tình huống · Infographic</p></div>
-        <div class="page-card-grid">
-          <a class="page-card" href="topic_pause_response.html"><span class="page-card-type">CHUYÊN ĐỀ 02</span><h4>Tạm dừng trước khi phản hồi</h4><p>Quy trình năm bước để lựa chọn cách nói bình tĩnh hơn.</p><span class="page-card-arrow">Mở trang →</span></a>
-          <a class="page-card" href="communication_scenarios.html"><span class="page-card-type">THỰC HÀNH</span><h4>Tình huống giao tiếp</h4><p>Phân tích ba tình huống và chọn phản hồi gợi ý.</p><span class="page-card-arrow">Mở trang →</span></a>
-          <a class="page-card" href="user_guide.html"><span class="page-card-type">HƯỚNG DẪN</span><h4>Cách sử dụng website</h4><p>Hướng dẫn khám phá các nội dung và lưu ý khi thực hành.</p><span class="page-card-arrow">Mở trang →</span></a>
+        <section class="topic-block" aria-labelledby="topic-one">
+          <div class="topic-heading"><span class="member-number">01</span><div><p class="topic-kicker">HIỂU MÌNH</p><h3 id="topic-one">Nhận diện cảm xúc</h3></div></div>
+          <div class="page-card-grid">
+            <a class="page-card" href="topic_pause_response.html"><span class="page-card-type">CHUYÊN ĐỀ</span><h4>Tạm dừng và nhận diện cảm xúc</h4><p>Quan sát cảm xúc và chọn cách phản hồi phù hợp hơn.</p><span class="page-card-arrow">Khám phá →</span></a>
+            <a class="page-card" href="index.html#overview-heading"><span class="page-card-type">VỀ WEBSITE</span><h4>Giới thiệu website</h4><p>Tìm hiểu mục tiêu và các nội dung chính của website.</p><span class="page-card-arrow">Tìm hiểu →</span></a>
+            <a class="page-card" href="communication_scenarios.html#thuc-hanh"><span class="page-card-type">THỰC HÀNH</span><h4>Luyện tập phản hồi</h4><p>Chọn tình huống và tham khảo gợi ý phản hồi.</p><span class="page-card-arrow">Thực hành →</span></a>
+          </div>
+        </section>
+
+        <section class="topic-block" aria-labelledby="topic-two">
+          <div class="topic-heading"><span class="member-number">02</span><div><p class="topic-kicker">CHỌN CÁCH PHẢN HỒI</p><h3 id="topic-two">Tạm dừng và lắng nghe</h3></div></div>
+          <div class="page-card-grid">
+            <a class="page-card" href="topic_pause_response.html"><span class="page-card-type">CHUYÊN ĐỀ</span><h4>Tạm dừng trước khi phản hồi</h4><p>Thực hành quy trình năm bước để phản hồi bình tĩnh hơn.</p><span class="page-card-arrow">Khám phá →</span></a>
+            <a class="page-card" href="communication_scenarios.html"><span class="page-card-type">TÌNH HUỐNG</span><h4>Luyện tập giao tiếp</h4><p>Phân tích tình huống và xem gợi ý phản hồi phù hợp.</p><span class="page-card-arrow">Thực hành →</span></a>
+            <a class="page-card" href="user_guide.html"><span class="page-card-type">HƯỚNG DẪN</span><h4>Cách sử dụng website</h4><p>Xem hướng dẫn khám phá nội dung và lưu ý khi thực hành.</p><span class="page-card-arrow">Xem hướng dẫn →</span></a>
+          </div>
+        </section>
+
+        <section class="topic-block" aria-labelledby="topic-three">
+          <div class="topic-heading"><span class="member-number">03</span><div><p class="topic-kicker">CÙNG GIẢI QUYẾT</p><h3 id="topic-three">Trao đổi nhu cầu và giải pháp</h3></div></div>
+          <div class="page-card-grid">
+            <a class="page-card" href="communication_scenarios.html"><span class="page-card-type">TÌNH HUỐNG</span><h4>Cùng tìm giải pháp</h4><p>Tham khảo cách trao đổi nhu cầu qua tình huống cụ thể.</p><span class="page-card-arrow">Khám phá →</span></a>
+            <a class="page-card" href="user_guide.html"><span class="page-card-type">HƯỚNG DẪN</span><h4>Hướng dẫn sử dụng website</h4><p>Xem cách khám phá nội dung và lưu ý khi thực hành.</p><span class="page-card-arrow">Xem hướng dẫn →</span></a>
+            <a class="page-card" href="topic_pause_response.html"><span class="page-card-type">INFOGRAPHIC</span><h4>Các bước trao đổi khi bất đồng</h4><p>Xem sơ đồ trực quan về quy trình trao đổi khi bất đồng.</p><span class="page-card-arrow">Xem infographic →</span></a>
+          </div>
+        </section>
+
+        <div class="roadmap-table-wrap">
+          <table class="roadmap-table">
+            <caption>Tóm tắt các bước khám phá website</caption>
+            <thead>
+              <tr><th scope="col">Bước</th><th scope="col">Nội dung</th><th scope="col">Trang gợi ý</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">01</th><td>Nhận diện cảm xúc và tạm dừng trước khi phản hồi</td><td><a href="topic_pause_response.html">Tạm dừng</a></td></tr>
+              <tr><th scope="row">02</th><td>Quan sát cách diễn đạt trong tình huống giao tiếp</td><td><a href="communication_scenarios.html">Tình huống</a></td></tr>
+              <tr><th scope="row">03</th><td>Thử viết lời phản hồi phù hợp với hoàn cảnh</td><td><a href="communication_scenarios.html#thuc-hanh">Thực hành</a></td></tr>
+            </tbody>
+          </table>
         </div>
-      </section>
+        <p class="dashboard-footnote"><strong>Lưu ý:</strong> Đây là tài liệu học tập về giao tiếp, không thay thế tư vấn chuyên môn.</p>
+      </div>
+    </section>
 
-      <section class="member-block" aria-labelledby="member-three-pages">
-        <div class="member-heading"><span class="member-number">03</span><h3 id="member-three-pages">Thành viên 3 · Trao đổi nhu cầu và thống nhất giải pháp</h3><p>3 trang · FAQ · Poster · Thư viện</p></div>
-        <div class="page-card-grid">
-          <a class="page-card" href="needs_and_solutions.html"><span class="page-card-type">CHUYÊN ĐỀ 03</span><h4>Nói nhu cầu, cùng tìm giải pháp</h4><p>Chuyển từ tranh đúng-sai sang trao đổi nhu cầu và thỏa thuận.</p><span class="page-card-arrow">Mở trang →</span></a>
-          <a class="page-card" href="frequently_asked_questions.html"><span class="page-card-type">HỎI & ĐÁP</span><h4>Câu hỏi thường gặp</h4><p>Sáu câu trả lời; từng mục có thể mở và đóng bằng bàn phím.</p><span class="page-card-arrow">Mở trang →</span></a>
-          <a class="page-card" href="visual_library.html"><span class="page-card-type">TƯ LIỆU TRỰC QUAN</span><h4>Thư viện hình ảnh</h4><p>Chín sản phẩm/hình minh họa có chú thích và nguồn gốc.</p><span class="page-card-arrow">Mở trang →</span></a>
-        </div>
-      </section>
-
-      <p class="dashboard-footnote"><strong>Gợi ý:</strong> Đi theo thứ tự Cảm xúc → Tạm dừng → Nhu cầu và giải pháp; hoặc mở trang Tình huống để luyện chọn cách phản hồi. Biểu mẫu đăng ký chỉ mô phỏng trên trình duyệt, không gửi hay lưu dữ liệu.</p>
+    <section class="section team-section" aria-labelledby="team-heading">
+      <p class="eyebrow eyebrow-dark">NHÓM THỰC HIỆN</p>
+      <h2 id="team-heading">Cùng xây dựng nội dung</h2>
+      <div class="team-list">
+        <article class="team-member"><span>THÀNH VIÊN 01</span><h3>Nguyễn Thu Hiền</h3></article>
+        <article class="team-member"><span>THÀNH VIÊN 02</span><h3>Đinh Huỳnh Thúy Vân</h3></article>
+        <article class="team-member"><span>THÀNH VIÊN 03</span><h3>Châu Thị Thu Hương</h3></article>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">↗</span><span>Lắng nghe <span class="brand-light">để hiểu</span></span></a>
-    <p>Dự án học tập về quản lý cảm xúc và xử lý xung đột.</p><span class="footer-credit">TỔNG QUAN · 2026</span>
+  <footer class="site-footer home-footer">
+    <div class="footer-about">
+      <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">↗</span><span>Lắng nghe <span class="brand-light">để hiểu</span></span></a>
+      <p>Dự án học tập về quản lý cảm xúc và xử lý bất đồng trong giao tiếp.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Liên kết cuối trang">
+      <a href="user_guide.html">Hướng dẫn</a>
+      <a href="topic_pause_response.html">Tạm dừng</a>
+      <a href="communication_scenarios.html">Tình huống</a>
+    </nav>
+    <span class="footer-credit">HỌC TẬP · LẮNG NGHE · KẾT NỐI</span>
   </footer>
 </body>
 </html>

@@ -19,7 +19,7 @@
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav class="site-nav" id="site-nav" aria-label="Điều hướng chính">
-        <a href="index.html">Tổng quan</a><a href="emotion_awareness.html">Cảm xúc</a><a href="project_introduction.html">Giới thiệu</a><a href="experience_registration.html">Đăng ký</a><a href="topic_pause_response.html">Tạm dừng</a><a class="active" href="communication_scenarios.html" aria-current="page">Tình huống</a><a href="needs_and_solutions.html">Giải pháp</a><a href="frequently_asked_questions.html">FAQ</a><a href="visual_library.html">Thư viện</a><a href="user_guide.html">Hướng dẫn</a>
+        <a href="index.html">Tổng quan</a><a href="topic_pause_response.html">Tạm dừng</a><a class="active" href="communication_scenarios.html" aria-current="page">Tình huống</a><a href="user_guide.html">Hướng dẫn</a>
       </nav>
     </div>
   </header>
@@ -91,6 +91,15 @@
             <p class="response-placeholder">Chọn một tình huống phía trên để xem gợi ý phản hồi.</p>
           </div>
           <p class="interaction-note">Đây là gợi ý để luyện tập, không có một câu trả lời duy nhất đúng cho mọi hoàn cảnh.</p>
+          <form class="practice-form" id="practice-form">
+            <div class="form-field">
+              <label for="practice-response">Bạn sẽ thử nói gì?</label>
+              <textarea id="practice-response" name="response" rows="3" minlength="5" required aria-describedby="practice-form-note"></textarea>
+            </div>
+            <button class="form-submit" type="submit">Gửi câu trả lời</button>
+            <p class="interaction-note" id="practice-form-note">Biểu mẫu chỉ mô phỏng thao tác gửi trên trình duyệt; nội dung không được gửi đi hoặc lưu lại.</p>
+            <div class="form-result" id="practice-result" role="status" aria-live="polite" hidden></div>
+          </form>
         </div>
       </div>
     </section>
@@ -99,7 +108,7 @@
   <footer class="site-footer">
     <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">↗</span><span>Lắng nghe <span class="brand-light">để hiểu</span></span></a>
     <p>Dự án học tập về quản lý cảm xúc và xử lý xung đột.</p>
-    <span class="footer-credit">THIẾT KẾ WEB · 2026</span>
+    <span class="footer-credit">Đinh Huỳnh Thúy Vân</span>
   </footer>
 </body>
 </html>
