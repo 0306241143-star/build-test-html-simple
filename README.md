@@ -10,10 +10,13 @@ Website tĩnh giới thiệu kỹ năng giao tiếp tích cực. Người xem c�
 
 Không cần cài phần mềm hay chạy máy chủ. Một số phông chữ được tải từ Google Fonts; nếu không có Internet, trang dùng phông chữ có sẵn trên máy.
 
+Tài liệu thiết kế, cấu trúc nội dung và quy ước giao diện nằm trong [`DESIGN.md`](./DESIGN.md).
+
 ## Cấu trúc thư mục
 
 ```text
 .
+├── DESIGN.md
 ├── index.html
 ├── topic_pause_response.html
 ├── communication_scenarios.html
@@ -52,6 +55,11 @@ Tệp `css/style.css` điều khiển màu sắc, phông chữ, khoảng cách v
 - Mỗi bộ chọn (selector), ví dụ `.site-header`, áp dụng kiểu cho phần tử HTML có lớp tương ứng.
 - Các phần trong `@media` điều chỉnh bố cục theo chiều rộng màn hình: dưới 760 px và dưới 480 px.
 - Mỗi quy tắc được viết thành nhiều dòng để dễ nhận ra bộ chọn và từng thuộc tính.
+
+## Quy ước đặt tên
+
+- Biến, hàm và tham số trong JavaScript dùng **camelCase**, ví dụ `practiceForm`, `renderSituationResponse` và `selectedSituation`.
+- Tên tệp HTML hiện dùng **snake_case**; `id` và class trong HTML/CSS dùng **kebab-case** để giữ nguyên các liên kết và bộ chọn đang hoạt động.
 
 ## Chức năng
 
