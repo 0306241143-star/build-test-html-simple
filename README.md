@@ -11,12 +11,14 @@ Website tĩnh giới thiệu kỹ năng giao tiếp tích cực. Người xem c�
 Không cần cài phần mềm hay chạy máy chủ. Một số phông chữ được tải từ Google Fonts; nếu không có Internet, trang dùng phông chữ có sẵn trên máy.
 
 Tài liệu thiết kế, cấu trúc nội dung và quy ước giao diện nằm trong [`DESIGN.md`](./DESIGN.md).
+Phạm vi phân công và sản phẩm của thành viên 2 được tổng hợp trong [`cong_viec_thanh_vien_2.md`](./cong_viec_thanh_vien_2.md).
 
 ## Cấu trúc thư mục
 
 ```text
 .
 ├── DESIGN.md
+├── cong_viec_thanh_vien_2.md
 ├── index.html
 ├── topic_pause_response.html
 ├── communication_scenarios.html
