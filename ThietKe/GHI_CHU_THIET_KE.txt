@@ -1,0 +1,8 @@
+BỘ THIẾT KẾ THÀNH VIÊN 3 – CHUYÊN ĐỀ 3
+
+poster-doi-thoai.svg: SẢN PHẨM TRUYỀN THÔNG CHÍNH của Thành viên 3.
+banner-lang-nghe.svg và infographic-5-buoc.svg: mẫu tích hợp dự thảo để thư viện đạt 3 sản phẩm truyền thông. Khi ghép website, thay bằng file sản phẩm của Thành viên 1, 2 nếu nhóm thống nhất.
+
+Cả ba có thể chỉnh sửa bằng Inkscape, Illustrator hoặc công cụ biên tập SVG. File PNG tương ứng ở Website/images.
+
+Tư liệu tham khảo thiết kế giao diện có hỗ trợ công cụ tạo ảnh; các SVG, mã HTML, CSS và JavaScript được xây dựng lại riêng và kiểm tra kỹ thuật. Không sử dụng ảnh thật của người nào trong thư viện.

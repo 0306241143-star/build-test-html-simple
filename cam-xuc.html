@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bạn cảm thấy như thế nào?</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-member1">
+
+    <div class="menu">
+        <a href="index.html">Trang tổng quan</a>
+        <a href="cam-xuc.html">Cảm xúc</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="dang-ky.html">Đăng ký</a>
+        <a href="thanh-vien-3.html">Thành viên 3</a>
+    </div>
+
+    <div class="content">
+        <h1>BẠN CẢM THẤY NHƯ THẾ NÀO?</h1>
+
+        <p>
+            Hãy chọn cảm xúc mà bạn đang trải qua
+            để nhận lời khuyên phù hợp nhé!
+        </p>
+
+        <!-- CAC NUT CAM XUC -->
+        <div class="camxuc">
+            <button onclick="chonCamXuc('vui')">😊 Vui vẻ</button>
+            <button onclick="chonCamXuc('buon')">😢 Buồn bã</button>
+            <button onclick="chonCamXuc('gian')">😠 Tức giận</button>
+            <button onclick="chonCamXuc('lo')">😟 Lo lắng</button>
+            <button onclick="chonCamXuc('met')">😴 Mệt mỏi</button>
+            <button onclick="chonCamXuc('binhyen')">😌 Bình yên</button>
+        </div>
+
+        <!-- NOI DUNG LOI KHUYEN -->
+        <div id="loikhuyen" class="loikhuyen"
+             style="display: none;">
+
+            <h2 id="tenCamXuc" class="tenCamXuc"></h2>
+
+            <p id="noiDungLoiKhuyen"
+               class="noiDungLoiKhuyen"></p>
+
+            <button onclick="doiCamXuc()">
+                Chọn cảm xúc khác
+            </button>
+        </div>
+
+        <!-- GIOI THIEU CHUYEN DE -->
+        <div class="gioithieu">
+            <h2> LẮNG NGHE ĐỂ HIỂU </h2>
+
+            <p>
+                Quản lý cảm xúc giúp chúng ta hiểu bản thân,
+                bình tĩnh trước những tình huống khó khăn
+                và xây dựng mối quan hệ tích cực với mọi người.
+            </p>
+
+            <a href="gioi-thieu.html">
+                Tìm hiểu thêm về chuyên đề
+            </a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,78 +1,45 @@
 # Lắng nghe để hiểu
 
-Website tĩnh giới thiệu kỹ năng giao tiếp tích cực. Người xem có thể đọc quy trình tạm dừng, chọn phản hồi và thực hành qua các tình huống.
+Website tĩnh tổng hợp nội dung của các thành viên về quản lý cảm xúc, lắng nghe
+và xử lý xung đột. Mở `index.html` bằng trình duyệt để bắt đầu; không cần cài
+đặt hoặc chạy máy chủ.
 
-## Cách mở website
-
-1. Tải hoặc giải nén toàn bộ thư mục dự án.
-2. Mở `index.html` bằng trình duyệt.
-3. Chọn một trang từ menu hoặc các thẻ nội dung.
-
-Không cần cài phần mềm hay chạy máy chủ. Một số phông chữ được tải từ Google Fonts; nếu không có Internet, trang dùng phông chữ có sẵn trên máy.
-
-Tài liệu thiết kế, cấu trúc nội dung và quy ước giao diện nằm trong [`DESIGN.md`](./DESIGN.md).
-Phạm vi phân công và sản phẩm của thành viên 2 được tổng hợp trong [`cong_viec_thanh_vien_2.md`](./cong_viec_thanh_vien_2.md).
-
-## Cấu trúc thư mục
-
-```text
-.
-├── DESIGN.md
-├── cong_viec_thanh_vien_2.md
-├── index.html
-├── topic_pause_response.html
-├── communication_scenarios.html
-├── user_guide.html
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-├── images/
-│   ├── site_logo.png
-│   └── conflict_resolution_steps.svg
-└── file_guide_and_member_assignments.pdf
-```
-
-## Các trang đang được giữ lại
+## Các trang
 
 | Trang | Nội dung |
 |---|---|
-| `index.html` | Giới thiệu website và liên kết đến các trang còn lại. |
-| `topic_pause_response.html` | Các bước tạm dừng và lựa chọn cách phản hồi. |
-| `communication_scenarios.html` | Tình huống thực hành và gợi ý phản hồi tương tác. |
+| `index.html` | Trang tổng quan và liên kết đến toàn bộ nội dung. |
+| `cam-xuc.html` | Chọn cảm xúc và xem gợi ý. |
+| `gioi-thieu.html` | Giới thiệu quản lý cảm xúc và xử lý xung đột. |
+| `dang-ky.html` | Biểu mẫu mô phỏng đăng ký hoạt động. |
+| `topic_pause_response.html` | Quy trình tạm dừng trước khi phản hồi. |
+| `communication_scenarios.html` | Tình huống và bài tập phản hồi tương tác. |
 | `user_guide.html` | Hướng dẫn sử dụng website. |
+| `chuyen-de-3.html` | Trao đổi nhu cầu và thống nhất giải pháp. |
+| `faq.html` | Câu hỏi thường gặp, có tìm kiếm và đóng/mở câu trả lời. |
+| `thu-vien.html` | Thư viện hình ảnh, bộ lọc và xem ảnh lớn. |
+| `thanh-vien-3.html` | Trang giới thiệu và điều hướng bộ sản phẩm Thành viên 3. |
 
-Các liên kết từng trỏ đến những trang không còn trong dự án đã được chuyển tới nội dung phù hợp nhất trong bốn trang hiện có. Nhãn menu và thẻ nội dung cũng được cập nhật để phản ánh đúng nơi người xem sẽ đến.
+## Tài nguyên
 
-## Tư liệu hình ảnh
+- `css/style.css` là tệp CSS duy nhất cho toàn bộ website. Giao diện riêng của
+  Thành viên 1 và 3 được giới hạn theo trang để không ảnh hưởng lẫn nhau.
+- `js/main.js` là tệp JavaScript duy nhất; chứa các tương tác cho tất cả trang.
+- `images/` chứa toàn bộ ảnh và biểu tượng SVG/PNG, bao gồm cả các bản SVG
+  thiết kế có thể chỉnh sửa. Banner, infographic và poster hiện đã có sẵn.
+- `ThietKe/` chứa ghi chú và tài liệu thiết kế dạng PDF của nhóm.
+- `TieuLuan/` chỉ chứa các báo cáo của thành viên ở định dạng PDF hoặc DOCX.
 
-- `site_logo.png` là logo hiển thị trong đầu trang và chân trang.
-- `conflict_resolution_steps.svg` là infographic về các bước trao đổi khi bất đồng.
+Website có một trang chủ duy nhất là `index.html`. Các trang thành viên khác
+được mở bằng liên kết trong menu và thẻ nội dung. Mọi liên kết trang và tài
+nguyên đều dùng đường dẫn tương đối để website vẫn hoạt động khi được sao chép
+sang vị trí khác.
 
-## Tìm hiểu CSS
+## Kiểm tra nhanh
 
-Tệp `css/style.css` điều khiển màu sắc, phông chữ, khoảng cách và bố cục:
+1. Mở `index.html` và truy cập các trang qua menu hoặc thẻ nội dung.
+2. Thử các nút cảm xúc, biểu mẫu đăng ký, FAQ, bộ lọc thư viện và xem ảnh lớn.
+3. Thu nhỏ cửa sổ để kiểm tra bố cục di động.
 
-- Các biến màu và phông chữ nằm ở đầu tệp trong `:root`. Thay giá trị ở đây để cập nhật giao diện đồng bộ.
-- Mỗi bộ chọn (selector), ví dụ `.site-header`, áp dụng kiểu cho phần tử HTML có lớp tương ứng.
-- Các phần trong `@media` điều chỉnh bố cục theo chiều rộng màn hình: dưới 760 px và dưới 480 px.
-- Mỗi quy tắc được viết thành nhiều dòng để dễ nhận ra bộ chọn và từng thuộc tính.
-
-## Quy ước đặt tên
-
-- Biến, hàm và tham số trong JavaScript dùng **camelCase**, ví dụ `practiceForm`, `renderSituationResponse` và `selectedSituation`.
-- Tên tệp HTML hiện dùng **snake_case**; `id` và class trong HTML/CSS dùng **kebab-case** để giữ nguyên các liên kết và bộ chọn đang hoạt động.
-
-## Chức năng
-
-- Menu thu gọn thành nút trên màn hình nhỏ.
-- Trang tình huống hiển thị gợi ý phản hồi khi người xem chọn một tình huống.
-- Trang chủ có bảng tóm tắt lộ trình; trang tình huống có biểu mẫu thực hành với nút gửi và phản hồi ngay trên trình duyệt.
-- Website chỉ chạy bằng HTML, CSS và JavaScript; không gửi hay lưu thông tin người dùng.
-
-## Kiểm tra cơ bản
-
-1. Mở `index.html` và thử các liên kết trong menu.
-2. Mở trang tình huống, đổi lựa chọn và kiểm tra phần gợi ý phản hồi.
-3. Thu nhỏ cửa sổ trình duyệt để kiểm tra menu và bố cục di động.
-4. Kiểm tra lại đường dẫn sau khi sao chép toàn bộ thư mục sang vị trí khác.
+Các biểu mẫu chỉ mô phỏng thao tác trong trình duyệt; website không gửi hay lưu
+thông tin người dùng.

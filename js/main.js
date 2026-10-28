@@ -177,13 +177,187 @@ if (experienceForm) {
 // Mở/đóng câu trả lời FAQ và đồng bộ aria-expanded cùng biểu tượng dấu cộng/trừ.
 function toggleFaqItem(event) {
   const questionButton = event.currentTarget;
+  const symbol = questionButton.querySelector(".faq-symbol");
+  if (!symbol) {
+    return;
+  }
+
   const answer = document.getElementById(questionButton.getAttribute("aria-controls"));
   const isExpanded = questionButton.getAttribute("aria-expanded") === "true";
   questionButton.setAttribute("aria-expanded", String(!isExpanded));
   answer.hidden = isExpanded;
-  questionButton.querySelector(".faq-symbol").textContent = isExpanded ? "+" : "−";
+  symbol.textContent = isExpanded ? "+" : "−";
 }
 
 document.querySelectorAll(".faq-question").forEach((questionButton) => {
-  questionButton.addEventListener("click", toggleFaqItem);
+  if (questionButton.querySelector(".faq-symbol")) {
+    questionButton.addEventListener("click", toggleFaqItem);
+  }
 });
+
+
+
+// Ch?c n?ng c?c trang Th?nh vi?n 1.
+function chonCamXuc(camxuc) {
+    document.getElementById("loikhuyen").style.display = "block";
+
+    if (camxuc == "vui")
+    {
+        document.getElementById("tenCamXuc").innerHTML = "😊 Bạn đang vui vẻ!";
+        document.getElementById("noiDungLoiKhuyen").innerHTML =
+            "Hãy tận hưởng niềm vui và chia sẻ năng lượng tích cực với mọi người.";
+    }
+    else if (camxuc == "buon") {
+        document.getElementById("tenCamXuc").innerHTML = "😢 Bạn đang buồn bã.";
+        document.getElementById("noiDungLoiKhuyen").innerHTML =
+            "Hãy cho bản thân thời gian nghỉ ngơi và tâm sự với người bạn tin tưởng.";
+    }
+    else if (camxuc == "gian") {
+        document.getElementById("tenCamXuc").innerHTML = "😠 Bạn đang tức giận.";
+        document.getElementById("noiDungLoiKhuyen").innerHTML =
+            "Hãy bình tĩnh, hít thở sâu và nói rõ điều khiến bạn khó chịu.";
+    }
+    else if (camxuc == "lo") {
+        document.getElementById("tenCamXuc").innerHTML = "😟 Bạn đang lo lắng.";
+        document.getElementById("noiDungLoiKhuyen").innerHTML =
+            "Hãy xác định nguyên nhân và giải quyết từng việc một.";
+    }
+    else if (camxuc == "met") {
+        document.getElementById("tenCamXuc").innerHTML = "😴 Bạn đang mệt mỏi.";
+        document.getElementById("noiDungLoiKhuyen").innerHTML =
+            "Hãy nghỉ ngơi, uống nước và sắp xếp công việc hợp lý.";
+    }
+    else if (camxuc == "binhyen") {
+        document.getElementById("tenCamXuc").innerHTML = "😌 Bạn đang bình yên.";
+        document.getElementById("noiDungLoiKhuyen").innerHTML =
+            "Hãy trân trọng cảm giác này và tiếp tục duy trì những thói quen tích cực.";
+    }
+}
+
+function doiCamXuc() {
+    document.getElementById("loikhuyen").style.display = "none";
+}
+
+
+
+
+
+function kiemTraForm() {
+    var hoten = document.getElementById("hoten").value;
+    var email = document.getElementById("email").value;
+    var sdt = document.getElementById("sdt").value;
+    var hoatdong = document.getElementById("hoatdong").value;
+    var lydo = document.getElementById("lydo").value;
+
+    var nam = document.getElementById("nam").checked;
+    var nu = document.getElementById("nu").checked;
+    var khac = document.getElementById("khac").checked;
+
+    if (hoten == "" || email == "" || sdt == ""
+        || hoatdong == "" || lydo == "") {
+
+        document.getElementById("loiDangKy").innerHTML =
+            "Bạn chưa đăng ký thành công. Vui lòng điền đầy đủ thông tin!";
+
+    }
+    else if (nam == false && nu == false && khac == false) {
+
+        document.getElementById("loiDangKy").innerHTML =
+            "Bạn chưa đăng ký thành công. Vui lòng chọn giới tính!";
+
+    }
+    else {
+        document.getElementById("loiDangKy").innerHTML = "";
+        document.getElementById("formDangKy").style.display = "none";
+        document.getElementById("thongbao").style.display = "block";
+    }
+}
+
+
+
+// Ch?c n?ng FAQ v? th? vi?n h?nh ?nh Th?nh vi?n 3.
+(()=>{
+/* Thành viên 3: FAQ accordion + lọc thư viện và hộp xem ảnh lớn; JS thuần */
+'use strict';
+// Data is read from semantic page markup; no library or network required.
+const faqButtons = Array.from(document.querySelectorAll('.faq-question'));
+const faqSearch = document.querySelector('#faq-search');
+const faqNoResult = document.querySelector('#faq-empty');
+function setFaqOpen(button, isOpen) {
+  const panel = document.getElementById(button.getAttribute('aria-controls'));
+  if (!panel) return;
+  button.setAttribute('aria-expanded', String(isOpen));
+  panel.hidden = !isOpen;
+  const icon = button.querySelector('.faq-icon');
+  if (icon) icon.textContent = isOpen ? '−' : '+';
+  // Đồng bộ nhãn nút chung khi mở/đóng một câu riêng.
+  const allButton = document.querySelector('#faq-expand');
+  if (allButton) allButton.textContent = faqButtons.length > 0 && faqButtons.every(b => b.getAttribute('aria-expanded') === 'true') ? 'Đóng tất cả' : 'Mở tất cả';
+}
+faqButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const next = button.getAttribute('aria-expanded') !== 'true';
+    faqButtons.forEach(b => setFaqOpen(b, false));
+    setFaqOpen(button, next);
+  });
+});
+const expandBtn = document.querySelector('#faq-expand');
+if (expandBtn) expandBtn.addEventListener('click', () => {
+  const allOpen = faqButtons.every(b => b.getAttribute('aria-expanded') === 'true');
+  faqButtons.forEach(b => setFaqOpen(b, !allOpen));
+  expandBtn.textContent = allOpen ? 'Mở tất cả' : 'Đóng tất cả';
+});
+const normalizeVietnamese = text => text.toLocaleLowerCase('vi').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+if (faqSearch) faqSearch.addEventListener('input', () => {
+  const query = normalizeVietnamese(faqSearch.value.trim());
+  let visible = 0;
+  faqButtons.forEach(button => {
+    const box = button.closest('.faq-item');
+    const found = normalizeVietnamese(box.textContent).includes(query);
+    box.classList.toggle('hidden', !found);
+    if (found) visible++;
+  });
+  if (faqNoResult) faqNoResult.hidden = visible !== 0;
+});
+const filterBtns = Array.from(document.querySelectorAll('[data-filter]'));
+const galleryCards = Array.from(document.querySelectorAll('[data-category]'));
+filterBtns.forEach(btn => btn.addEventListener('click', () => {
+  const filter = btn.dataset.filter;
+  filterBtns.forEach(other => other.setAttribute('aria-pressed', String(other === btn)));
+  galleryCards.forEach(card => card.classList.toggle('is-hidden', filter !== 'all' && card.dataset.category !== filter));
+}));
+const lightbox = document.getElementById('lightbox');
+let lastFocused = null;
+if (lightbox) {
+  const closeBtn = lightbox.querySelector('.lightbox-close');
+  const large = lightbox.querySelector('img');
+  const caption = lightbox.querySelector('p');
+  document.querySelectorAll('.media-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const small = button.querySelector('img');
+      lastFocused = button;
+      large.src = small.getAttribute('src');
+      large.alt = small.alt;
+      caption.textContent = button.closest('figure').querySelector('figcaption strong').textContent;
+      lightbox.hidden = false;
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    });
+  });
+  function closeLightbox() {
+    if (lightbox.hidden) return;
+    lightbox.hidden = true;
+    large.removeAttribute('src');
+    document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
+  }
+  closeBtn.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', e => {
+    if (lightbox.hidden) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'Tab') { e.preventDefault(); closeBtn.focus(); }
+  });
+}
+
+})();

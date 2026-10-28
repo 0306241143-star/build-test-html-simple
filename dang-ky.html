@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký hoạt động trải nghiệm </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-member1">
+
+    <div class="menu">
+        <a href="index.html">Trang tổng quan</a>
+        <a href="cam-xuc.html">Cảm xúc</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="dang-ky.html">Đăng ký</a>
+        <a href="thanh-vien-3.html">Thành viên 3</a>
+    </div>
+
+    <div class="content" id="content">
+
+        <h1>ĐĂNG KÝ HOẠT ĐỘNG TRẢI NGHIỆM</h1>
+
+        <h3>
+            Bạn hãy điền thông tin để đăng ký tham gia hoạt động
+            tìm hiểu cảm xúc và kỹ năng xử lý xung đột.
+        </h3>
+
+        <form id="formDangKy">
+            <label>Họ và tên:</label>
+            <input type="text" id="hoten" placeholder="Nhập họ và tên">
+
+            <label>Email:</label>
+            <input type="text" id="email" placeholder="Nhập email">
+
+            <label>Số điện thoại:</label>
+            <input type="text" id="sdt" placeholder="Nhập số điện thoại">
+
+            <label>Giới tính:</label>
+            <input type="radio" name="gioitinh" id="nam" value="Nam"> Nam
+            <input type="radio" name="gioitinh" id="nu" value="Nữ"> Nữ
+            <input type="radio" name="gioitinh" id="khac" value="Khác"> Khác
+
+            <label>Hoạt động muốn tham gia:</label>
+            <select id="hoatdong">
+                <option value="">-- Chọn hoạt động --</option>
+                <option value="Quan ly cam xuc">Quản lý cảm xúc</option>
+                <option value="Lang nghe">Kỹ năng lắng nghe</option>
+                <option value="Xu ly xung dot">Xử lý xung đột</option>
+            </select>
+
+            <label>Lý do đăng ký:</label>
+            <textarea id="lydo" rows="4"
+                placeholder="Nhập lý do đăng ký"></textarea>
+
+            <button type="button" onclick="kiemTraForm()">
+                Gửi đăng ký
+            </button>
+        </form>
+
+        <p id="loiDangKy"></p>
+
+     <div id="thongbao" style="display: none;">
+         <h2>🎉 CHÚC MỪNG BẠN!</h2>
+         <p>Bạn đã đăng ký hoạt động thành công.</p>
+         <p>Cảm ơn bạn đã quan tâm đến Lắng nghe để hiểu. </p>
+         <a href="cam-xuc.html">Quay lại trang cảm xúc</a>
+         <br><br>
+         <a href="gioi-thieu.html">Tìm hiểu chuyên đề</a>
+     </div>
+    </div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
